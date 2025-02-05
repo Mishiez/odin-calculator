@@ -1,15 +1,18 @@
-function add(num1,num2){
-    return num1 + num2;
-}
+let operation="+";
+let num1=15;
+let num2=15;
 
-function asubtract(num1,num2){
-    return num1 - num2;
-}
-
-function multiply(num1,num2){
-    return num1 * num2;
-}
-
-function division(num1,num2){
-    return num1 / num2;
+const calculate = (operation,num1,num2)=>{
+    switch (operation){
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;   
+        case "/":
+            return num1 / num2;
+        default:
+            return "Operation not recognized";
+    }
 }
