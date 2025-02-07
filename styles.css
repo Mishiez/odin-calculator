@@ -5,7 +5,6 @@
 
 .calc-row{
     display:flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -18,11 +17,11 @@
     font-size: 30px;
 }
 #clear-button{
-    height: 168px;
-    width: 100px;
+    height: 70px;
+    width: 240px;
     margin: 20px;
     text-align: center;
-    line-height: 170px;
+    line-height: 80px;
     font-size: 60px;
     align-items: center;
 }
