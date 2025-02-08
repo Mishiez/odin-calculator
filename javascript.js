@@ -26,7 +26,24 @@ Array.from(buttons).forEach(button=>
 
 function showNumber(event){
     const button = event.target;
-    //if ((button.value!="del") || (button.value!="equal-sign") || (button.value!="clear-button")){
+    if (button.value=="del"){
+        deleteControl();
+    }
+    else if(button.value=="equal-sign"){
+        display.innerHTML = "equal-sign";   
+    }
+    else if(button.value=="clear"){
+        clearControl();  
+    }
+    else{
         display.innerHTML += button.value;
-   // }
+    }
+}
+
+function clearControl(){
+    display.innerHTML = '';
+}
+
+function deleteControl(){
+    display.innerHTML = display.innerHTML.substring(0,display.innerHTML.length - 1);
 }
